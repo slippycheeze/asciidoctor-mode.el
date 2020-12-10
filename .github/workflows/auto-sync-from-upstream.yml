@@ -1,0 +1,13 @@
+on:
+  schedule:
+    # carefully randomly selected start time.  blame the RNG, not me.
+    - cron:  '44 4 * * *'
+jobs:
+  auto-update:
+    name: 'auto-generate PR when upstream updates the code'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'check out my repo'
+        uses: 'actions/checkout@v2'
+      - name: 'gh_fsync'
+        uses: 'Matt-Gleich/gh_fsync@master'

@@ -1,0 +1,4 @@
+commit_message: '🔄 Update file from "upstream" via gh_fsync'
+files:
+  - path: 'asciidoctor-mode.el'
+    source: 'https://github.com/habamax/.emacs.d/blob/master/lisp/asciidoctor-mode.el'
