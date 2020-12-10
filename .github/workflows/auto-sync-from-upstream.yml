@@ -2,6 +2,7 @@ on:
   schedule:
     # carefully randomly selected start time.  blame the RNG, not me.
     - cron:  '44 4 * * *'
+  workflow_dispatch:
 jobs:
   auto-update:
     name: 'auto-generate PR when upstream updates the code'
